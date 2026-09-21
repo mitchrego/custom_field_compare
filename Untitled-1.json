@@ -1,0 +1,933 @@
+{
+  "items": [
+    {
+      "id": 2275,
+      "name": "Working Days",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 0.5,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2276,
+      "name": "Work",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 1,
+      "isSystem": true,
+      "config": {
+        "units": "h",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2277,
+      "name": "Remaining Work",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 1.5,
+      "isSystem": true,
+      "config": {
+        "units": "h",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2292,
+      "name": "Subtasks Planned Start",
+      "fieldType": "Date",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 9,
+      "isSystem": true,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2293,
+      "name": "Subtasks Planned End",
+      "fieldType": "Date",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 9.5,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2294,
+      "name": "Dates Alignment",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 10,
+      "isSystem": true,
+      "value": "Dates Aligned\r\nPlanned Start Mismatch\r\nPlanned End Mismatch\r\nBoth Dates Mismatch",
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2297,
+      "name": "Customer Value",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 11.5,
+      "isSystem": false,
+      "value": "Major\r\nModerate\r\nLimited\r\nNone",
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2298,
+      "name": "Complexity",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 12,
+      "isSystem": false,
+      "value": "1 - Extremely Complex\r\n3 - Moderately Complex\r\n5 - Low Complexity",
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2299,
+      "name": "Required Resources",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 12.5,
+      "isSystem": false,
+      "value": "X-Large (\u003E15)\r\nLarge (10-15)\r\nMedium (5-10)\r\nSmall (1-5)\r\nX-Small (\u003C1)",
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2300,
+      "name": "Strategic Impact",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 13,
+      "isSystem": false,
+      "value": "X-Large ($1M+)\r\nLarge ($250k-$1M)\r\nMedium ($100k-$250k)\r\nSmall ($25k-$100k)\r\nX-Small (\u003C$25k)",
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2301,
+      "name": "Score",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 13.5,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2302,
+      "name": "Estimated Effort",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 14,
+      "isSystem": false,
+      "value": "X-Large (1 year+)\r\nLarge (9-12 months)\r\nMedium (6-9 months)\r\nSmall (3-6 months)\r\nX-Small (\u003C3 months)",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2548,
+      "name": "PPM Project Number",
+      "fieldType": "Text",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 30,
+      "numericPriority": 137,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2550,
+      "name": "Closure Date",
+      "fieldType": "Date",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 138,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2551,
+      "name": "Investment Class",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 138.5,
+      "isSystem": false,
+      "value": "Run\r\nChange",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2552,
+      "name": "Products Supported",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 139,
+      "isSystem": false,
+      "value": "New\r\nExisting\r\nNew and Existing",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2553,
+      "name": "Investment Timeline",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 139.5,
+      "isSystem": false,
+      "value": "Carryover\r\nCarryover/Multi-Year\r\nMulti-Year\r\nRelease\r\nNew",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2554,
+      "name": "Discretionary",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 140,
+      "isSystem": false,
+      "value": "Yes\r\nNo",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2555,
+      "name": "Investment Type",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 140.5,
+      "isSystem": false,
+      "value": "Competitive Positioning\r\nExisting System Maintenance\r\nIncrease Efficiency & Reduce Cost\r\nIncrease Revenue\r\nInfrastructure Security & Support\r\nIntegrated FA & Client Experience\r\nLegal and Regulatory\r\nLegal, Risk and Compliance\r\nRegulatory\r\nTechnical Infrastructure Upgrade\r\nVolume Driven Growth",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2556,
+      "name": "FA Facing",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 10,
+      "numericPriority": 141,
+      "isSystem": false,
+      "value": "Yes\r\nNo",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2557,
+      "name": "External Audit Impact",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 141.5,
+      "isSystem": false,
+      "value": "Compliance\r\nRegulatory\r\nRisk\r\nSupervision\r\nNot Impacted",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2558,
+      "name": "Business Owner Priority",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 142,
+      "isSystem": false,
+      "value": "None\r\n1. Critical\r\n2. High\r\n3. Moderate\r\n4. Low",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2560,
+      "name": "Finance UID",
+      "fieldType": "Text",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 20,
+      "numericPriority": 143,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2561,
+      "name": "Using Enterprise Data",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 143.5,
+      "isSystem": false,
+      "value": "None\r\nYes\r\nNo",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2562,
+      "name": "Managed Cloud Outside RJ",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 144,
+      "isSystem": false,
+      "value": "None\r\nNot Applicable\r\nNew\r\nExisting\r\nNew and Existing\r\nUndetermined",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2563,
+      "name": "RJ Managed and Deployed",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 144.5,
+      "isSystem": false,
+      "value": "None\r\nYes\r\nNo",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2564,
+      "name": "Fiscal Year",
+      "fieldType": "Text",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 145,
+      "isSystem": true,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2565,
+      "name": "Methodology",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 145.5,
+      "isSystem": false,
+      "value": "Hybrid\r\nWaterfall\r\nInfrastructure\r\nAgile (Features & Releases)",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2566,
+      "name": "RJ Top Program",
+      "fieldType": "CheckBox",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 146,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2567,
+      "name": "Firm Initiative",
+      "fieldType": "CheckBox",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 146.5,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2568,
+      "name": "SDLC Auditable",
+      "fieldType": "CheckBox",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 147,
+      "isSystem": true,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2569,
+      "name": "Confidence Level",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 147.5,
+      "isSystem": false,
+      "value": "High\r\nMedium\r\nLow",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2570,
+      "name": "Capex or Opex Project",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 148,
+      "isSystem": false,
+      "value": "Capitalized\r\nExpensed",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2593,
+      "name": "Primary Point of Contact",
+      "fieldType": "Text",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 159.5,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2597,
+      "name": "Total Benefit",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 161.5,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2598,
+      "name": "Total Project Cost",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 162,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2599,
+      "name": "ROI",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 162.5,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2600,
+      "name": "Benefit Category",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 163,
+      "isSystem": false,
+      "value": "None\r\nCost Savings (Run-Rate or One-Time)\r\nCost Avoidance/Deferral\r\nProductivity/Capacity Creation\r\nDirect Revenue Growth (Attributable)\r\nRevenue Enablement/Acceleration (Influence-Based)\r\nWorking Capital/Balance Sheet Optimization\r\nRisk Reduction/Loss Avoidance\r\nRegulatory Requirement\r\nStrategic/Intangible Value",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2601,
+      "name": "Tollgate Governance",
+      "fieldType": "CheckBox",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 163.5,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2617,
+      "name": "Business Sponsor",
+      "fieldType": "Text",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 171,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2620,
+      "name": "Total Approved Budget",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 172.5,
+      "isSystem": true,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2625,
+      "name": "Primary PM",
+      "fieldType": "Text",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 120,
+      "numericPriority": 174.5,
+      "isSystem": true,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2631,
+      "name": "EXT Demand",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 177.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2632,
+      "name": "EXT SQM",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 178,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2633,
+      "name": "INT Demand",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 178.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2634,
+      "name": "INT SQM",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 179,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2685,
+      "name": "Clean Description",
+      "fieldType": "Text",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 202.5,
+      "isSystem": true,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    }
+  ]
+}
