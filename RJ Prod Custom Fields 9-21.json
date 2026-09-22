@@ -1,0 +1,7859 @@
+{
+  "items": [
+    {
+      "id": 2305,
+      "name": "People Count",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AgileReleaseTrain",
+        "id": 9002
+      },
+      "numericPriority": 15.5,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2341,
+      "name": "Approved Delta",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 33.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2342,
+      "name": "Target to Proposed Delta",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 34,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": "[Target Budget]-[Proposed Labor Budget]-[Proposed Non Labor Budget]"
+      }
+    },
+    {
+      "id": 2345,
+      "name": "Proposed to Proposed In Scope Delta",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 35.5,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": "[Proposed Labor Budget]+[Proposed Non Labor Budget]-[Proposed Labor Budget In Scope]-[Proposed Non Labor Budget In Scope]"
+      }
+    },
+    {
+      "id": 2356,
+      "name": "Run Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 41,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2357,
+      "name": "OpEx Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 41.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2358,
+      "name": "Target CapEx (Percentage)",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 42,
+      "isSystem": false,
+      "config": {
+        "units": "%",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2359,
+      "name": "Target Run (Percentage)",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 42.5,
+      "isSystem": false,
+      "config": {
+        "units": "%",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2360,
+      "name": "Target Budget",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 43,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2361,
+      "name": "CapEx Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 43.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2362,
+      "name": "Non Labor Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 44,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2363,
+      "name": "Labor Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 44.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2364,
+      "name": "Approved Non Labor Budget",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 45,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2366,
+      "name": "Approved Labor Budget",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 46,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2367,
+      "name": "Grow Proposed",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 46.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2368,
+      "name": "Run Proposed",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 47,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2369,
+      "name": "OpEx Proposed",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 47.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2370,
+      "name": "CapEx Proposed",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 48,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2371,
+      "name": "Proposed Non Labor Budget",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 48.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2372,
+      "name": "Proposed Labor Budget",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 49,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2385,
+      "name": "Target Budget In Scope",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 55.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2386,
+      "name": "Proposed Labor Budget In Scope",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 56,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2387,
+      "name": "Proposed Non Labor Budget In Scope",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 56.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2390,
+      "name": "Type",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 58,
+      "isSystem": true,
+      "value": "People\r\nWork\r\nProduct",
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2395,
+      "name": "Portfolio Budget Type",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 60.5,
+      "isSystem": true,
+      "value": "People\r\nWork\r\nProduct",
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2400,
+      "name": "Labor Remaining",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 63,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": "[Approved Labor Budget]-[Labor Actuals]"
+      }
+    },
+    {
+      "id": 2401,
+      "name": "Non Labor Remaining",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 63.5,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": "[Approved Non Labor Budget]-[Non Labor Actuals]"
+      }
+    },
+    {
+      "id": 2404,
+      "name": "Target to Target In Scope Delta",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 65,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": "[Target Budget]-[Target Budget In Scope]"
+      }
+    },
+    {
+      "id": 2416,
+      "name": "Proposed Budget In Scope",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 71,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": "[Proposed Labor Budget In Scope]+[Proposed Non Labor Budget In Scope]"
+      }
+    },
+    {
+      "id": 2420,
+      "name": "Target Grow (Percentage)",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 73,
+      "isSystem": false,
+      "config": {
+        "units": "%",
+        "calculationModel": "100-[Target Run (Percentage)]"
+      }
+    },
+    {
+      "id": 2421,
+      "name": "Target OpEx (Percentage)",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 73.5,
+      "isSystem": false,
+      "config": {
+        "units": "%",
+        "calculationModel": "100-[Target CapEx (Percentage)]"
+      }
+    },
+    {
+      "id": 2429,
+      "name": "Target Grow",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 77.5,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": "[Target Budget]-[Target Run]"
+      }
+    },
+    {
+      "id": 2431,
+      "name": "Target OpEx",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 78.5,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": "[Target Budget]-[Target CapEx]"
+      }
+    },
+    {
+      "id": 2435,
+      "name": "Grow In Scope",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 80.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2436,
+      "name": "Run In Scope",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 81,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2438,
+      "name": "Proposed Budget",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 82,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": "[Proposed Labor Budget]+[Proposed Non Labor Budget]"
+      }
+    },
+    {
+      "id": 2439,
+      "name": "OpEx In Scope",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 82.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2441,
+      "name": "CapEx In Scope",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 83.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2443,
+      "name": "Approved Budget",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 84.5,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": "[Approved Labor Budget]+[Approved Non Labor Budget]"
+      }
+    },
+    {
+      "id": 2444,
+      "name": "In Scope",
+      "fieldType": "CheckBox",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 85,
+      "isSystem": false,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2445,
+      "name": "Grow Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 85.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2446,
+      "name": "Target CapEx",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 86,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2448,
+      "name": "Target Run",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 87,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2453,
+      "name": "Approved to Proposed Delta",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 89.5,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": "[Approved Labor Budget]+[Approved Non Labor Budget]-[Proposed Labor Budget]-[Proposed Non Labor Budget]"
+      }
+    },
+    {
+      "id": 2458,
+      "name": "Approved Labor Delta",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 92,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2459,
+      "name": "Approved Non Labor Delta",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 92.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2634,
+      "name": "EXT Demand",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 178,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2635,
+      "name": "EXT SQM",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 178.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2646,
+      "name": "INT Demand",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 184,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2647,
+      "name": "INT SQM",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "AnnualBudget",
+        "id": 9091
+      },
+      "numericPriority": 184.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2340,
+      "name": "Run Proposed",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 33,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2343,
+      "name": "Proposed to Proposed In Scope Delta",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 34.5,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": "[Proposed Labor Budget]+[Proposed Non Labor Budget]-[Proposed Labor Budget In Scope]-[Proposed Non Labor Budget In Scope]"
+      }
+    },
+    {
+      "id": 2346,
+      "name": "Target OpEx",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 36,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": "[Target Budget]-[Target CapEx]"
+      }
+    },
+    {
+      "id": 2347,
+      "name": "Approved Non Labor Budget",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 36.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2348,
+      "name": "Approved Labor Budget",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 37,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2373,
+      "name": "OpEx In Scope",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 49.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2374,
+      "name": "OpEx Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 50,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2375,
+      "name": "Non Labor Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 50.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2376,
+      "name": "Labor Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 51,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2377,
+      "name": "Grow Proposed",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 51.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2378,
+      "name": "Grow In Scope",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 52,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2379,
+      "name": "Grow Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 52.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2380,
+      "name": "CapEx Proposed",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 53,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2381,
+      "name": "CapEx In Scope",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 53.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2382,
+      "name": "CapEx Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 54,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2389,
+      "name": "Type",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 57.5,
+      "isSystem": true,
+      "value": "People\r\nWork\r\nProduct",
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2391,
+      "name": "Run Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 58.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2394,
+      "name": "Portfolio Budget Type",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 60,
+      "isSystem": true,
+      "value": "People\r\nWork\r\nProduct",
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2398,
+      "name": "Labor Remaining",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 62,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": "[Approved Labor Budget]-[Labor Actuals]"
+      }
+    },
+    {
+      "id": 2399,
+      "name": "Non Labor Remaining",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 62.5,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": "[Approved Non Labor Budget]-[Non Labor Actuals]"
+      }
+    },
+    {
+      "id": 2403,
+      "name": "Target to Target In Scope Delta",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 64.5,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": "[Target Budget]-[Target Budget In Scope]"
+      }
+    },
+    {
+      "id": 2407,
+      "name": "Target CapEx (Percentage)",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 66.5,
+      "isSystem": false,
+      "config": {
+        "units": "%",
+        "calculationModel": "[Target CapEx]/[Target Budget]*100"
+      }
+    },
+    {
+      "id": 2408,
+      "name": "Target Run (Percentage)",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 67,
+      "isSystem": false,
+      "config": {
+        "units": "%",
+        "calculationModel": "[Target Run]/[Target Budget]*100"
+      }
+    },
+    {
+      "id": 2415,
+      "name": "Target Run",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 70.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2417,
+      "name": "Target Grow",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 71.5,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": "[Target Budget]-[Target Run]"
+      }
+    },
+    {
+      "id": 2418,
+      "name": "Proposed Budget In Scope",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 72,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": "[Proposed Labor Budget In Scope]+[Proposed Non Labor Budget In Scope]"
+      }
+    },
+    {
+      "id": 2419,
+      "name": "Target CapEx",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 72.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2424,
+      "name": "Target Budget",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 75,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2426,
+      "name": "Target Grow (Percentage)",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 76,
+      "isSystem": false,
+      "config": {
+        "units": "%",
+        "calculationModel": "100-[Target Run (Percentage)]"
+      }
+    },
+    {
+      "id": 2428,
+      "name": "Target OpEx (Percentage)",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 77,
+      "isSystem": false,
+      "config": {
+        "units": "%",
+        "calculationModel": "100-[Target CapEx (Percentage)]"
+      }
+    },
+    {
+      "id": 2432,
+      "name": "Proposed Budget",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 79,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": "[Proposed Labor Budget]+[Proposed Non Labor Budget]"
+      }
+    },
+    {
+      "id": 2442,
+      "name": "Approved Budget",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 84,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": "[Approved Labor Budget]+[Approved Non Labor Budget]"
+      }
+    },
+    {
+      "id": 2449,
+      "name": "Approved Labor Delta",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 87.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2454,
+      "name": "Approved to Proposed Delta",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 90,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": "[Approved Labor Budget]+[Approved Non Labor Budget]-[Proposed Labor Budget]-[Proposed Non Labor Budget]"
+      }
+    },
+    {
+      "id": 2456,
+      "name": "Approved Non Labor Delta",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 91,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2457,
+      "name": "Approved Delta",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 91.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2460,
+      "name": "Target to Proposed Delta",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 93,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": "[Target Budget]-[Proposed Labor Budget]-[Proposed Non Labor Budget]"
+      }
+    },
+    {
+      "id": 2461,
+      "name": "Run In Scope",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 93.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2462,
+      "name": "Target Budget In Scope",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 94,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2463,
+      "name": "OpEx Proposed",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 94.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2464,
+      "name": "Proposed Non Labor Budget In Scope",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 95,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2465,
+      "name": "Proposed Non Labor Budget",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 95.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2466,
+      "name": "Proposed Labor Budget In Scope",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 96,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2467,
+      "name": "Proposed Labor Budget",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 96.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2640,
+      "name": "Total EXT Demand",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 181,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2641,
+      "name": "Total EXT SQM",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 181.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2652,
+      "name": "Total INT Demand",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 187,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2653,
+      "name": "Total INT SQM",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Budget",
+        "id": 9072
+      },
+      "numericPriority": 187.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2584,
+      "name": "Executive Summary",
+      "fieldType": "RichText",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "BusinessCase",
+        "id": 9214
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 155,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2585,
+      "name": "Benefits Case",
+      "fieldType": "RichText",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "BusinessCase",
+        "id": 9214
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 155.5,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2586,
+      "name": "Critical Resources",
+      "fieldType": "RichText",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "BusinessCase",
+        "id": 9214
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 156,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2587,
+      "name": "Project Dependencies",
+      "fieldType": "RichText",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "BusinessCase",
+        "id": 9214
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 156.5,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2588,
+      "name": "Risk of Performing",
+      "fieldType": "RichText",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "BusinessCase",
+        "id": 9214
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 157,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2589,
+      "name": "Risk of Not Performing",
+      "fieldType": "RichText",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "BusinessCase",
+        "id": 9214
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 157.5,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2590,
+      "name": "Work In Scope",
+      "fieldType": "RichText",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "BusinessCase",
+        "id": 9214
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 158,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2591,
+      "name": "Work Not In Scope",
+      "fieldType": "RichText",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "BusinessCase",
+        "id": 9214
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 158.5,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2592,
+      "name": "Assumptions",
+      "fieldType": "RichText",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "BusinessCase",
+        "id": 9214
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 159,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2480,
+      "name": "Available Capacity",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Capacity",
+        "id": 9207
+      },
+      "numericPriority": 103,
+      "isSystem": true,
+      "config": {
+        "units": "%",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2481,
+      "name": "Total Capacity",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Capacity",
+        "id": 9207
+      },
+      "numericPriority": 103.5,
+      "isSystem": true,
+      "config": {
+        "units": "%",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2482,
+      "name": "Reserved Capacity",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Capacity",
+        "id": 9207
+      },
+      "numericPriority": 104,
+      "isSystem": true,
+      "config": {
+        "units": "%",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2483,
+      "name": "Overloaded",
+      "fieldType": "CheckBox",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Capacity",
+        "id": 9207
+      },
+      "numericPriority": 104.5,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2484,
+      "name": "Available Hours",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Capacity",
+        "id": 9207
+      },
+      "numericPriority": 105,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2485,
+      "name": "Reserved Hours",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Capacity",
+        "id": 9207
+      },
+      "numericPriority": 105.5,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2486,
+      "name": "Total Hours",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Capacity",
+        "id": 9207
+      },
+      "numericPriority": 106,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2487,
+      "name": "Over Capacity Demands",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Capacity",
+        "id": 9207
+      },
+      "numericPriority": 106.5,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2488,
+      "name": "Description",
+      "fieldType": "RichText",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Capacity",
+        "id": 9207
+      },
+      "numericPriority": 107,
+      "isSystem": false,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2489,
+      "name": "Capacity State",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Capacity",
+        "id": 9207
+      },
+      "numericPriority": 107.5,
+      "isSystem": true,
+      "value": "Current\r\nPast",
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2525,
+      "name": "Working Days",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Capacity",
+        "id": 9207
+      },
+      "numericPriority": 125.5,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2314,
+      "name": "Run (Percentage)",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Cost",
+        "id": 9073
+      },
+      "numericPriority": 20,
+      "isSystem": true,
+      "config": {
+        "units": "%",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2315,
+      "name": "Date",
+      "fieldType": "Date",
+      "process": {
+
+      },
+      "required": true,
+      "entityType": {
+        "name": "Cost",
+        "id": 9073
+      },
+      "numericPriority": 20.5,
+      "isSystem": false,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2316,
+      "name": "Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Cost",
+        "id": 9073
+      },
+      "numericPriority": 21,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2317,
+      "name": "Run Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": true,
+      "entityType": {
+        "name": "Cost",
+        "id": 9073
+      },
+      "numericPriority": 21.5,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2318,
+      "name": "Grow Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Cost",
+        "id": 9073
+      },
+      "numericPriority": 22,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2319,
+      "name": "OpEx (Percentage)",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Cost",
+        "id": 9073
+      },
+      "numericPriority": 22.5,
+      "isSystem": false,
+      "config": {
+        "units": "%",
+        "calculationModel": "[OpexActuals]/[Actuals]*100"
+      }
+    },
+    {
+      "id": 2320,
+      "name": "CapEx Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": true,
+      "entityType": {
+        "name": "Cost",
+        "id": 9073
+      },
+      "numericPriority": 23,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2321,
+      "name": "Grow (Percentage)",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Cost",
+        "id": 9073
+      },
+      "numericPriority": 23.5,
+      "isSystem": false,
+      "config": {
+        "units": "%",
+        "calculationModel": "[GrowActuals]/[Actuals]*100"
+      }
+    },
+    {
+      "id": 2322,
+      "name": "CapEx (Percentage)",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Cost",
+        "id": 9073
+      },
+      "numericPriority": 24,
+      "isSystem": true,
+      "config": {
+        "units": "%",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2323,
+      "name": "OpEx Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": true,
+      "entityType": {
+        "name": "Cost",
+        "id": 9073
+      },
+      "numericPriority": 24.5,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2604,
+      "name": "Cost Category",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": true,
+      "entityType": {
+        "name": "Cost",
+        "id": 9073
+      },
+      "maxTextLength": 30,
+      "numericPriority": 164.5,
+      "isSystem": false,
+      "value": "Equipment\r\nExternal\r\nInternal\r\nSQM",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2605,
+      "name": "Cost Type",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": true,
+      "entityType": {
+        "name": "Cost",
+        "id": 9073
+      },
+      "maxTextLength": 30,
+      "numericPriority": 165,
+      "isSystem": false,
+      "value": "Hardware\r\nSoftware\r\nExternal Labor\r\nInternal Labor\r\nOther\r\nSQM",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2606,
+      "name": "Cost Subtype",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": true,
+      "entityType": {
+        "name": "Cost",
+        "id": 9073
+      },
+      "maxTextLength": 40,
+      "numericPriority": 165.5,
+      "isSystem": false,
+      "value": "Hardware Maintenance\r\nHardware Purchase\r\nHardware Subscription\r\nCloud Services\r\nSoftware Maintenance\r\nSoftware Purchase\r\nSoftware Subscription\r\nExternal\r\nExternal Travel Expense\r\nInternal\r\nInternal Travel Expense",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2607,
+      "name": "PRF Number",
+      "fieldType": "Text",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Cost",
+        "id": 9073
+      },
+      "maxTextLength": 100,
+      "numericPriority": 166,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2661,
+      "name": "Internal Actual",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Cost",
+        "id": 9073
+      },
+      "numericPriority": 191.5,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2662,
+      "name": "External Actual",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Cost",
+        "id": 9073
+      },
+      "numericPriority": 192,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2663,
+      "name": "Internal SQM Actual",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Cost",
+        "id": 9073
+      },
+      "numericPriority": 192.5,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2664,
+      "name": "External SQM Actual",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Cost",
+        "id": 9073
+      },
+      "numericPriority": 193,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2313,
+      "name": "Is Current",
+      "fieldType": "CheckBox",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "DayPeriod",
+        "id": 9104
+      },
+      "numericPriority": 19.5,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2470,
+      "name": "Reserved Capacity",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Demand",
+        "id": 9079
+      },
+      "numericPriority": 98,
+      "isSystem": true,
+      "config": {
+        "units": "%",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2471,
+      "name": "Past",
+      "fieldType": "CheckBox",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Demand",
+        "id": 9079
+      },
+      "numericPriority": 98.5,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2473,
+      "name": "Overloaded",
+      "fieldType": "CheckBox",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Demand",
+        "id": 9079
+      },
+      "numericPriority": 99.5,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2476,
+      "name": "Total Hours",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Demand",
+        "id": 9079
+      },
+      "numericPriority": 101,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2477,
+      "name": "Reserved Hours",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Demand",
+        "id": 9079
+      },
+      "numericPriority": 101.5,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2479,
+      "name": "Over Capacity",
+      "fieldType": "CheckBox",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Demand",
+        "id": 9079
+      },
+      "numericPriority": 102.5,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2522,
+      "name": "Working Days",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Demand",
+        "id": 9079
+      },
+      "numericPriority": 124,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2531,
+      "name": "Total Allocated Cost",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Demand",
+        "id": 9079
+      },
+      "numericPriority": 128.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2532,
+      "name": "Run Proposed",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Demand",
+        "id": 9079
+      },
+      "numericPriority": 129,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2533,
+      "name": "Grow Proposed",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Demand",
+        "id": 9079
+      },
+      "numericPriority": 129.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2539,
+      "name": "OpEx Proposed",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Demand",
+        "id": 9079
+      },
+      "numericPriority": 132.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2542,
+      "name": "In Scope",
+      "fieldType": "CheckBox",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Demand",
+        "id": 9079
+      },
+      "numericPriority": 134,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2544,
+      "name": "CapEx Proposed",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Demand",
+        "id": 9079
+      },
+      "numericPriority": 135,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2623,
+      "name": "Department Name",
+      "fieldType": "Text",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Department",
+        "id": 9221
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 173.5,
+      "isSystem": true,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2324,
+      "name": "In Scope",
+      "fieldType": "CheckBox",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Expense",
+        "id": 9094
+      },
+      "numericPriority": 25,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2325,
+      "name": "Grow (Percentage)",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Expense",
+        "id": 9094
+      },
+      "numericPriority": 25.5,
+      "isSystem": false,
+      "config": {
+        "units": "%",
+        "calculationModel": "100-[Run (Percentage)]"
+      }
+    },
+    {
+      "id": 2326,
+      "name": "OpEx (Percentage)",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Expense",
+        "id": 9094
+      },
+      "numericPriority": 26,
+      "isSystem": false,
+      "config": {
+        "units": "%",
+        "calculationModel": "100-[CapEx (Percentage)]"
+      }
+    },
+    {
+      "id": 2327,
+      "name": "Proposed",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": true,
+      "entityType": {
+        "name": "Expense",
+        "id": 9094
+      },
+      "numericPriority": 26.5,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2328,
+      "name": "Date",
+      "fieldType": "Date",
+      "process": {
+
+      },
+      "required": true,
+      "entityType": {
+        "name": "Expense",
+        "id": 9094
+      },
+      "numericPriority": 27,
+      "isSystem": false,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2329,
+      "name": "Grow Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Expense",
+        "id": 9094
+      },
+      "numericPriority": 27.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2330,
+      "name": "Run Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Expense",
+        "id": 9094
+      },
+      "numericPriority": 28,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2331,
+      "name": "OpEx Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Expense",
+        "id": 9094
+      },
+      "numericPriority": 28.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2332,
+      "name": "CapEx Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Expense",
+        "id": 9094
+      },
+      "numericPriority": 29,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2333,
+      "name": "Grow Proposed",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Expense",
+        "id": 9094
+      },
+      "numericPriority": 29.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2334,
+      "name": "Run Proposed",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Expense",
+        "id": 9094
+      },
+      "numericPriority": 30,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2335,
+      "name": "OpEx Proposed",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Expense",
+        "id": 9094
+      },
+      "numericPriority": 30.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2336,
+      "name": "CapEx Proposed",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Expense",
+        "id": 9094
+      },
+      "numericPriority": 31,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2337,
+      "name": "Run (Percentage)",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": true,
+      "entityType": {
+        "name": "Expense",
+        "id": 9094
+      },
+      "numericPriority": 31.5,
+      "isSystem": false,
+      "config": {
+        "units": "%",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2338,
+      "name": "CapEx (Percentage)",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": true,
+      "entityType": {
+        "name": "Expense",
+        "id": 9094
+      },
+      "numericPriority": 32,
+      "isSystem": false,
+      "config": {
+        "units": "%",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2339,
+      "name": "Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Expense",
+        "id": 9094
+      },
+      "numericPriority": 32.5,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2615,
+      "name": "Expense Type",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": true,
+      "entityType": {
+        "name": "Expense",
+        "id": 9094
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 170,
+      "isSystem": false,
+      "value": "External Labor - Fixed Bid\r\nExternal Travel\r\nHardware\r\nHardware Maintenance\r\nSoftware - Perpetual Licenses\r\nSoftware - Subscription Licenses\r\nSoftware Maintenance\r\nOther",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2658,
+      "name": "Expense Category",
+      "fieldType": "Text",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Expense",
+        "id": 9094
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 190,
+      "isSystem": true,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2491,
+      "name": "Type",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Expertise",
+        "id": 9110
+      },
+      "numericPriority": 108.5,
+      "isSystem": true,
+      "value": "User Expertise\r\nJob Profile Expertise\r\nWork Allocation Expertise",
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2492,
+      "name": "Senior Manager",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Expertise",
+        "id": 9110
+      },
+      "numericPriority": 109,
+      "isSystem": false,
+      "value": "Not Required\r\nNice to Have\r\nOptional\r\nBeginner\r\nIntermediate\r\nAdvanced\r\nExpert",
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2493,
+      "name": "Manager",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Expertise",
+        "id": 9110
+      },
+      "numericPriority": 109.5,
+      "isSystem": false,
+      "value": "Not Required\r\nNice to Have\r\nOptional\r\nBeginner\r\nIntermediate\r\nAdvanced\r\nExpert",
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2494,
+      "name": "Associate",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Expertise",
+        "id": 9110
+      },
+      "numericPriority": 110,
+      "isSystem": false,
+      "value": "Not Required\r\nNice to Have\r\nOptional\r\nBeginner\r\nIntermediate\r\nAdvanced\r\nExpert",
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2495,
+      "name": "Senior Associate",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Expertise",
+        "id": 9110
+      },
+      "numericPriority": 110.5,
+      "isSystem": false,
+      "value": "Not Required\r\nNice to Have\r\nOptional\r\nBeginner\r\nIntermediate\r\nAdvanced\r\nExpert",
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2496,
+      "name": "Experience Level",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": true,
+      "entityType": {
+        "name": "Expertise",
+        "id": 9110
+      },
+      "numericPriority": 111,
+      "isSystem": false,
+      "value": "Beginner\r\nIntermediate\r\nAdvanced\r\nExpert",
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2497,
+      "name": "Core Skill",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": true,
+      "entityType": {
+        "name": "Expertise",
+        "id": 9110
+      },
+      "numericPriority": 111.5,
+      "isSystem": false,
+      "value": "Y\r\nN",
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2490,
+      "name": "Available Resources",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "JobProfile",
+        "id": 9109
+      },
+      "numericPriority": 108,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2612,
+      "name": "Legacy Profile",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "JobProfile",
+        "id": 9109
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 168.5,
+      "isSystem": false,
+      "value": "Yes\r\nNo\r\nTemporary",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2614,
+      "name": "Resource Type",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": true,
+      "entityType": {
+        "name": "JobProfile",
+        "id": 9109
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 169.5,
+      "isSystem": false,
+      "value": "Internal\r\nExternal",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2616,
+      "name": "Daily Hours",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "JobProfile",
+        "id": 9109
+      },
+      "numericPriority": 170.5,
+      "isSystem": true,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2629,
+      "name": "isSQM",
+      "fieldType": "CheckBox",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "JobProfile",
+        "id": 9109
+      },
+      "numericPriority": 175.5,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2667,
+      "name": "Resource Category",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "JobProfile",
+        "id": 9109
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 194.5,
+      "isSystem": false,
+      "value": "Internal\r\nInternal SQM\r\nExternal\r\nExternal SQM",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2303,
+      "name": "Date",
+      "fieldType": "Date",
+      "process": {
+
+      },
+      "required": true,
+      "entityType": {
+        "name": "KeyMilestone",
+        "id": 9066
+      },
+      "numericPriority": 14.5,
+      "isSystem": false,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2350,
+      "name": "Grow Proposed",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthlyBudget",
+        "id": 9093
+      },
+      "numericPriority": 38,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2351,
+      "name": "Run Proposed",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthlyBudget",
+        "id": 9093
+      },
+      "numericPriority": 38.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2352,
+      "name": "OpEx Proposed",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthlyBudget",
+        "id": 9093
+      },
+      "numericPriority": 39,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2353,
+      "name": "CapEx Proposed",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthlyBudget",
+        "id": 9093
+      },
+      "numericPriority": 39.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2383,
+      "name": "In Scope",
+      "fieldType": "CheckBox",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthlyBudget",
+        "id": 9093
+      },
+      "numericPriority": 54.5,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2384,
+      "name": "Proposed Non Labor Budget",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthlyBudget",
+        "id": 9093
+      },
+      "numericPriority": 55,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2388,
+      "name": "Proposed Non Labor Budget In Scope",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthlyBudget",
+        "id": 9093
+      },
+      "numericPriority": 57,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2393,
+      "name": "Type",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthlyBudget",
+        "id": 9093
+      },
+      "numericPriority": 59.5,
+      "isSystem": true,
+      "value": "People\r\nWork\r\nProduct",
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2397,
+      "name": "Portfolio Budget Type",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthlyBudget",
+        "id": 9093
+      },
+      "numericPriority": 61.5,
+      "isSystem": true,
+      "value": "People\r\nWork\r\nProduct",
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2402,
+      "name": "Grow Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthlyBudget",
+        "id": 9093
+      },
+      "numericPriority": 64,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2405,
+      "name": "Run Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthlyBudget",
+        "id": 9093
+      },
+      "numericPriority": 65.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2425,
+      "name": "Proposed Budget In Scope",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthlyBudget",
+        "id": 9093
+      },
+      "numericPriority": 75.5,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": "[Proposed Labor Budget In Scope]+[Proposed Non Labor Budget In Scope]"
+      }
+    },
+    {
+      "id": 2437,
+      "name": "Proposed Budget",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthlyBudget",
+        "id": 9093
+      },
+      "numericPriority": 81.5,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": "[Proposed Labor Budget]+[Proposed Non Labor Budget]"
+      }
+    },
+    {
+      "id": 2447,
+      "name": "OpEx Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthlyBudget",
+        "id": 9093
+      },
+      "numericPriority": 86.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2450,
+      "name": "CapEx Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthlyBudget",
+        "id": 9093
+      },
+      "numericPriority": 88,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2451,
+      "name": "Non Labor Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthlyBudget",
+        "id": 9093
+      },
+      "numericPriority": 88.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2452,
+      "name": "Labor Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthlyBudget",
+        "id": 9093
+      },
+      "numericPriority": 89,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2455,
+      "name": "Proposed to Proposed In Scope Delta",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthlyBudget",
+        "id": 9093
+      },
+      "numericPriority": 90.5,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": "[Proposed Labor Budget]+[Proposed Non Labor Budget]-[Proposed Labor Budget In Scope]-[Proposed Non Labor Budget In Scope]"
+      }
+    },
+    {
+      "id": 2468,
+      "name": "Proposed Labor Budget",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthlyBudget",
+        "id": 9093
+      },
+      "numericPriority": 97,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2469,
+      "name": "Proposed Labor Budget In Scope",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthlyBudget",
+        "id": 9093
+      },
+      "numericPriority": 97.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2636,
+      "name": "EXT Demand",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthlyBudget",
+        "id": 9093
+      },
+      "numericPriority": 179,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2638,
+      "name": "EXT SQM",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthlyBudget",
+        "id": 9093
+      },
+      "numericPriority": 180,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2642,
+      "name": "EXT Demand for JP",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthlyBudget",
+        "id": 9093
+      },
+      "numericPriority": 182,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2643,
+      "name": "EXT Demand for User",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthlyBudget",
+        "id": 9093
+      },
+      "numericPriority": 182.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2644,
+      "name": "EXT SQM for JP",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthlyBudget",
+        "id": 9093
+      },
+      "numericPriority": 183,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2645,
+      "name": "EXT SQM for User",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthlyBudget",
+        "id": 9093
+      },
+      "numericPriority": 183.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2650,
+      "name": "INT Demand",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthlyBudget",
+        "id": 9093
+      },
+      "numericPriority": 186,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2651,
+      "name": "INT SQM",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthlyBudget",
+        "id": 9093
+      },
+      "numericPriority": 186.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2654,
+      "name": "INT Demand for JP",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthlyBudget",
+        "id": 9093
+      },
+      "numericPriority": 188,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2655,
+      "name": "INT Demand for User",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthlyBudget",
+        "id": 9093
+      },
+      "numericPriority": 188.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2656,
+      "name": "INT SQM for JP",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthlyBudget",
+        "id": 9093
+      },
+      "numericPriority": 189,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2657,
+      "name": "INT SQM for User",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthlyBudget",
+        "id": 9093
+      },
+      "numericPriority": 189.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2309,
+      "name": "Is Current",
+      "fieldType": "CheckBox",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthPeriod",
+        "id": 9089
+      },
+      "numericPriority": 17.5,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2594,
+      "name": "MonthYear",
+      "fieldType": "Text",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "MonthPeriod",
+        "id": 9089
+      },
+      "maxTextLength": 10,
+      "numericPriority": 160,
+      "isSystem": true,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2506,
+      "name": "Reserved Hours",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Overtime",
+        "id": 9086
+      },
+      "numericPriority": 116,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2510,
+      "name": "Requested Hours",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": true,
+      "entityType": {
+        "name": "Overtime",
+        "id": 9086
+      },
+      "numericPriority": 118,
+      "isSystem": false,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2521,
+      "name": "Version ID",
+      "fieldType": "Text",
+      "process": {
+
+      },
+      "required": true,
+      "entityType": {
+        "name": "ProductVersion",
+        "id": 9163
+      },
+      "numericPriority": 123.5,
+      "isSystem": false,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2596,
+      "name": "Non Production Portfolio",
+      "fieldType": "CheckBox",
+      "process": {
+        "name": "SAFe",
+        "id": 1,
+        "terms": [
+          {
+            "wordKey": "Iteration",
+            "value": "Iteration"
+          },
+          {
+            "wordKey": "Iterations",
+            "value": "Iterations"
+          },
+          {
+            "wordKey": "Iteration Big Icon Text",
+            "value": "Iteration"
+          },
+          {
+            "wordKey": "Iteration Small Icon Text",
+            "value": "I"
+          },
+          {
+            "wordKey": "Project",
+            "value": "Portfolio"
+          },
+          {
+            "wordKey": "Projects",
+            "value": "Portfolios"
+          },
+          {
+            "wordKey": "Project Big Icon Text",
+            "value": "Portfolio"
+          },
+          {
+            "wordKey": "Impediment",
+            "value": "Impediment"
+          },
+          {
+            "wordKey": "Impediments",
+            "value": "Impediments"
+          },
+          {
+            "wordKey": "Impediment Big Icon Text",
+            "value": "Impediment"
+          },
+          {
+            "wordKey": "Impediment Small Icon Text",
+            "value": "I"
+          },
+          {
+            "wordKey": "Project Small Icon Text",
+            "value": "P"
+          },
+          {
+            "wordKey": "Release",
+            "value": "Planning Interval"
+          },
+          {
+            "wordKey": "Releases",
+            "value": "Planning Intervals"
+          },
+          {
+            "wordKey": "Release Big Icon Text",
+            "value": "Planning Interval"
+          },
+          {
+            "wordKey": "Release Small Icon Text",
+            "value": "PI"
+          },
+          {
+            "wordKey": "Epic",
+            "value": "Capability"
+          },
+          {
+            "wordKey": "Epics",
+            "value": "Capabilities"
+          },
+          {
+            "wordKey": "Epic Big Icon Text",
+            "value": "Capability"
+          },
+          {
+            "wordKey": "Epic Small Icon Text",
+            "value": "C"
+          },
+          {
+            "wordKey": "Request",
+            "value": "Idea"
+          },
+          {
+            "wordKey": "Requests",
+            "value": "Ideas"
+          },
+          {
+            "wordKey": "Request Big Icon Text",
+            "value": "Idea"
+          },
+          {
+            "wordKey": "Request Small Icon Text",
+            "value": "I"
+          },
+          {
+            "wordKey": "Feature",
+            "value": "Feature"
+          },
+          {
+            "wordKey": "Features",
+            "value": "Features"
+          },
+          {
+            "wordKey": "Feature Big Icon Text",
+            "value": "Feature"
+          },
+          {
+            "wordKey": "Feature Small Icon Text",
+            "value": "F"
+          },
+          {
+            "wordKey": "Build",
+            "value": "Build"
+          },
+          {
+            "wordKey": "Builds",
+            "value": "Builds"
+          },
+          {
+            "wordKey": "Build Big Icon Text",
+            "value": "Build"
+          },
+          {
+            "wordKey": "Build Small Icon Text",
+            "value": "B"
+          },
+          {
+            "wordKey": "Portfolio Epic",
+            "value": "Portfolio Epic"
+          },
+          {
+            "wordKey": "Portfolio Epics",
+            "value": "Portfolio Epics"
+          },
+          {
+            "wordKey": "Portfolio Epic Big Icon Text",
+            "value": "Portfolio Epic"
+          },
+          {
+            "wordKey": "Portfolio Epic Small Icon Text",
+            "value": "PE"
+          }
+        ]
+      },
+      "required": false,
+      "entityType": {
+        "name": "Project",
+        "id": 1
+      },
+      "numericPriority": 161,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2609,
+      "name": "Project Count",
+      "fieldType": "Number",
+      "process": {
+        "name": "SAFe",
+        "id": 1,
+        "terms": [
+          {
+            "wordKey": "Iteration",
+            "value": "Iteration"
+          },
+          {
+            "wordKey": "Iterations",
+            "value": "Iterations"
+          },
+          {
+            "wordKey": "Iteration Big Icon Text",
+            "value": "Iteration"
+          },
+          {
+            "wordKey": "Iteration Small Icon Text",
+            "value": "I"
+          },
+          {
+            "wordKey": "Project",
+            "value": "Portfolio"
+          },
+          {
+            "wordKey": "Projects",
+            "value": "Portfolios"
+          },
+          {
+            "wordKey": "Project Big Icon Text",
+            "value": "Portfolio"
+          },
+          {
+            "wordKey": "Impediment",
+            "value": "Impediment"
+          },
+          {
+            "wordKey": "Impediments",
+            "value": "Impediments"
+          },
+          {
+            "wordKey": "Impediment Big Icon Text",
+            "value": "Impediment"
+          },
+          {
+            "wordKey": "Impediment Small Icon Text",
+            "value": "I"
+          },
+          {
+            "wordKey": "Project Small Icon Text",
+            "value": "P"
+          },
+          {
+            "wordKey": "Release",
+            "value": "Planning Interval"
+          },
+          {
+            "wordKey": "Releases",
+            "value": "Planning Intervals"
+          },
+          {
+            "wordKey": "Release Big Icon Text",
+            "value": "Planning Interval"
+          },
+          {
+            "wordKey": "Release Small Icon Text",
+            "value": "PI"
+          },
+          {
+            "wordKey": "Epic",
+            "value": "Capability"
+          },
+          {
+            "wordKey": "Epics",
+            "value": "Capabilities"
+          },
+          {
+            "wordKey": "Epic Big Icon Text",
+            "value": "Capability"
+          },
+          {
+            "wordKey": "Epic Small Icon Text",
+            "value": "C"
+          },
+          {
+            "wordKey": "Request",
+            "value": "Idea"
+          },
+          {
+            "wordKey": "Requests",
+            "value": "Ideas"
+          },
+          {
+            "wordKey": "Request Big Icon Text",
+            "value": "Idea"
+          },
+          {
+            "wordKey": "Request Small Icon Text",
+            "value": "I"
+          },
+          {
+            "wordKey": "Feature",
+            "value": "Feature"
+          },
+          {
+            "wordKey": "Features",
+            "value": "Features"
+          },
+          {
+            "wordKey": "Feature Big Icon Text",
+            "value": "Feature"
+          },
+          {
+            "wordKey": "Feature Small Icon Text",
+            "value": "F"
+          },
+          {
+            "wordKey": "Build",
+            "value": "Build"
+          },
+          {
+            "wordKey": "Builds",
+            "value": "Builds"
+          },
+          {
+            "wordKey": "Build Big Icon Text",
+            "value": "Build"
+          },
+          {
+            "wordKey": "Build Small Icon Text",
+            "value": "B"
+          },
+          {
+            "wordKey": "Portfolio Epic",
+            "value": "Portfolio Epic"
+          },
+          {
+            "wordKey": "Portfolio Epics",
+            "value": "Portfolio Epics"
+          },
+          {
+            "wordKey": "Portfolio Epic Big Icon Text",
+            "value": "Portfolio Epic"
+          },
+          {
+            "wordKey": "Portfolio Epic Small Icon Text",
+            "value": "PE"
+          }
+        ]
+      },
+      "required": false,
+      "entityType": {
+        "name": "Project",
+        "id": 1
+      },
+      "numericPriority": 167,
+      "isSystem": true,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2278,
+      "name": "Type",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "ProjectTask",
+        "id": 9189
+      },
+      "numericPriority": 2,
+      "isSystem": false,
+      "value": "Fixed Units\r\nFixed Work\r\nFixed Duration",
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2279,
+      "name": "Open for Time Entry",
+      "fieldType": "CheckBox",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "ProjectTask",
+        "id": 9189
+      },
+      "numericPriority": 2.5,
+      "isSystem": false,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2280,
+      "name": "Unique ID",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "ProjectTask",
+        "id": 9189
+      },
+      "numericPriority": 3,
+      "isSystem": false,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2281,
+      "name": "Constraint Date",
+      "fieldType": "Date",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "ProjectTask",
+        "id": 9189
+      },
+      "numericPriority": 3.5,
+      "isSystem": false,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2282,
+      "name": "Deadline",
+      "fieldType": "Date",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "ProjectTask",
+        "id": 9189
+      },
+      "numericPriority": 4,
+      "isSystem": false,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2283,
+      "name": "Remaining Work",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "ProjectTask",
+        "id": 9189
+      },
+      "numericPriority": 4.5,
+      "isSystem": false,
+      "config": {
+        "units": "h",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2284,
+      "name": "Work",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "ProjectTask",
+        "id": 9189
+      },
+      "numericPriority": 5,
+      "isSystem": false,
+      "config": {
+        "units": "h",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2285,
+      "name": "Resource Count",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "ProjectTask",
+        "id": 9189
+      },
+      "numericPriority": 5.5,
+      "isSystem": false,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2286,
+      "name": "Constraint Type",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "ProjectTask",
+        "id": 9189
+      },
+      "numericPriority": 6,
+      "isSystem": false,
+      "value": "Time\r\nCost\r\nScope\r\nQuality\r\nResources\r\nRisks",
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2287,
+      "name": "Summary Task",
+      "fieldType": "CheckBox",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "ProjectTask",
+        "id": 9189
+      },
+      "numericPriority": 6.5,
+      "isSystem": false,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2288,
+      "name": "Working Days",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "ProjectTask",
+        "id": 9189
+      },
+      "numericPriority": 7,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2289,
+      "name": "Subtasks Planned Start",
+      "fieldType": "Date",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "ProjectTask",
+        "id": 9189
+      },
+      "numericPriority": 7.5,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2290,
+      "name": "Subtasks Planned End",
+      "fieldType": "Date",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "ProjectTask",
+        "id": 9189
+      },
+      "numericPriority": 8,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2291,
+      "name": "Dates Alignment",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "ProjectTask",
+        "id": 9189
+      },
+      "numericPriority": 8.5,
+      "isSystem": true,
+      "value": "Dates Aligned\r\nPlanned Start Mismatch\r\nPlanned End Mismatch\r\nBoth Dates Mismatch",
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2295,
+      "name": "Level Number",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "ProjectTask",
+        "id": 9189
+      },
+      "numericPriority": 10.5,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2296,
+      "name": "Level",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "ProjectTask",
+        "id": 9189
+      },
+      "numericPriority": 11,
+      "isSystem": true,
+      "value": "Level 1\r\nLevel 2\r\nLevel 3\r\nLevel 4\r\nLevel 5\r\nLevel 6\r\nLevel 7\r\nLevel 8\r\nLevel 9\r\nLevel 10",
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2501,
+      "name": "Level",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "PublicHoliday",
+        "id": 9083
+      },
+      "numericPriority": 113.5,
+      "isSystem": true,
+      "value": "Common\r\nUser",
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2507,
+      "name": "Total Hours",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "PublicHoliday",
+        "id": 9083
+      },
+      "numericPriority": 116.5,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2508,
+      "name": "Requested Hours",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "PublicHoliday",
+        "id": 9083
+      },
+      "numericPriority": 117,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2509,
+      "name": "Working Days",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "PublicHoliday",
+        "id": 9083
+      },
+      "numericPriority": 117.5,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2512,
+      "name": "Reserved Hours",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "PublicHoliday",
+        "id": 9083
+      },
+      "numericPriority": 119,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2519,
+      "name": "Reserved Capacity",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "PublicHoliday",
+        "id": 9083
+      },
+      "numericPriority": 122.5,
+      "isSystem": true,
+      "config": {
+        "units": "%",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2344,
+      "name": "Proposed to Proposed In Scope Delta",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "QuarterlyBudget",
+        "id": 9092
+      },
+      "numericPriority": 35,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": "[Proposed Labor Budget]+[Proposed Non Labor Budget]-[Proposed Labor Budget In Scope]-[Proposed Non Labor Budget In Scope]"
+      }
+    },
+    {
+      "id": 2349,
+      "name": "OpEx Proposed",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "QuarterlyBudget",
+        "id": 9092
+      },
+      "numericPriority": 37.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2354,
+      "name": "CapEx Proposed",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "QuarterlyBudget",
+        "id": 9092
+      },
+      "numericPriority": 40,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2355,
+      "name": "In Scope",
+      "fieldType": "CheckBox",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "QuarterlyBudget",
+        "id": 9092
+      },
+      "numericPriority": 40.5,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2392,
+      "name": "Type",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "QuarterlyBudget",
+        "id": 9092
+      },
+      "numericPriority": 59,
+      "isSystem": true,
+      "value": "People\r\nWork\r\nProduct",
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2396,
+      "name": "Portfolio Budget Type",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "QuarterlyBudget",
+        "id": 9092
+      },
+      "numericPriority": 61,
+      "isSystem": true,
+      "value": "People\r\nWork\r\nProduct",
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2406,
+      "name": "Grow Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "QuarterlyBudget",
+        "id": 9092
+      },
+      "numericPriority": 66,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2409,
+      "name": "Run Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "QuarterlyBudget",
+        "id": 9092
+      },
+      "numericPriority": 67.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2410,
+      "name": "OpEx Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "QuarterlyBudget",
+        "id": 9092
+      },
+      "numericPriority": 68,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2411,
+      "name": "CapEx Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "QuarterlyBudget",
+        "id": 9092
+      },
+      "numericPriority": 68.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2412,
+      "name": "Non Labor Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "QuarterlyBudget",
+        "id": 9092
+      },
+      "numericPriority": 69,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2413,
+      "name": "Labor Actuals",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "QuarterlyBudget",
+        "id": 9092
+      },
+      "numericPriority": 69.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2414,
+      "name": "Grow Proposed",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "QuarterlyBudget",
+        "id": 9092
+      },
+      "numericPriority": 70,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2422,
+      "name": "Proposed Budget In Scope",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "QuarterlyBudget",
+        "id": 9092
+      },
+      "numericPriority": 74,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": "[Proposed Labor Budget In Scope]+[Proposed Non Labor Budget In Scope]"
+      }
+    },
+    {
+      "id": 2423,
+      "name": "Run Proposed",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "QuarterlyBudget",
+        "id": 9092
+      },
+      "numericPriority": 74.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2427,
+      "name": "Proposed Non Labor Budget In Scope",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "QuarterlyBudget",
+        "id": 9092
+      },
+      "numericPriority": 76.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2430,
+      "name": "Proposed Labor Budget In Scope",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "QuarterlyBudget",
+        "id": 9092
+      },
+      "numericPriority": 78,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2433,
+      "name": "Proposed Non Labor Budget",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "QuarterlyBudget",
+        "id": 9092
+      },
+      "numericPriority": 79.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2434,
+      "name": "Proposed Labor Budget",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "QuarterlyBudget",
+        "id": 9092
+      },
+      "numericPriority": 80,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2440,
+      "name": "Proposed Budget",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "QuarterlyBudget",
+        "id": 9092
+      },
+      "numericPriority": 83,
+      "isSystem": false,
+      "config": {
+        "units": "$",
+        "calculationModel": "[Proposed Labor Budget]+[Proposed Non Labor Budget]"
+      }
+    },
+    {
+      "id": 2637,
+      "name": "EXT Demand",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "QuarterlyBudget",
+        "id": 9092
+      },
+      "numericPriority": 179.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2639,
+      "name": "EXT SQM",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "QuarterlyBudget",
+        "id": 9092
+      },
+      "numericPriority": 180.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2648,
+      "name": "INT Demand",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "QuarterlyBudget",
+        "id": 9092
+      },
+      "numericPriority": 185,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2649,
+      "name": "INT SQM",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "QuarterlyBudget",
+        "id": 9092
+      },
+      "numericPriority": 185.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2311,
+      "name": "Is Current",
+      "fieldType": "CheckBox",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "QuarterPeriod",
+        "id": 9090
+      },
+      "numericPriority": 18.5,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2527,
+      "name": "Hours Ratio",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Rate",
+        "id": 9067
+      },
+      "numericPriority": 126.5,
+      "isSystem": true,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2528,
+      "name": "Hourly Rate",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Rate",
+        "id": 9067
+      },
+      "numericPriority": 127,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2529,
+      "name": "Current Rate",
+      "fieldType": "CheckBox",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Rate",
+        "id": 9067
+      },
+      "numericPriority": 127.5,
+      "isSystem": true,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2575,
+      "name": "Blended",
+      "fieldType": "CheckBox",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Rate",
+        "id": 9067
+      },
+      "numericPriority": 150.5,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2669,
+      "name": "RateAsText",
+      "fieldType": "Text",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Rate",
+        "id": 9067
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 195.5,
+      "isSystem": true,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2503,
+      "name": "Partial Leave",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": true,
+      "entityType": {
+        "name": "SickLeave",
+        "id": 9087
+      },
+      "numericPriority": 114.5,
+      "isSystem": false,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2504,
+      "name": "Reserved Capacity",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "SickLeave",
+        "id": 9087
+      },
+      "numericPriority": 115,
+      "isSystem": true,
+      "config": {
+        "units": "%",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2514,
+      "name": "Reserved Hours",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "SickLeave",
+        "id": 9087
+      },
+      "numericPriority": 120,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2515,
+      "name": "Requested Hours",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "SickLeave",
+        "id": 9087
+      },
+      "numericPriority": 120.5,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2516,
+      "name": "Total Hours",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "SickLeave",
+        "id": 9087
+      },
+      "numericPriority": 121,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2517,
+      "name": "Working Days",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "SickLeave",
+        "id": 9087
+      },
+      "numericPriority": 121.5,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2498,
+      "name": "Available Resources",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Skill",
+        "id": 9077
+      },
+      "numericPriority": 112,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2304,
+      "name": "People Count",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Team",
+        "id": 23
+      },
+      "numericPriority": 15,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2670,
+      "name": "Hours",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": true,
+      "entityType": {
+        "name": "TimeEntry",
+        "id": 9206
+      },
+      "numericPriority": 196,
+      "isSystem": false,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2671,
+      "name": "Date",
+      "fieldType": "Date",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TimeEntry",
+        "id": 9206
+      },
+      "numericPriority": 196.5,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2672,
+      "name": "Description",
+      "fieldType": "RichText",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TimeEntry",
+        "id": 9206
+      },
+      "numericPriority": 197,
+      "isSystem": false,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2674,
+      "name": "Posted",
+      "fieldType": "CheckBox",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TimeEntry",
+        "id": 9206
+      },
+      "numericPriority": 198,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2675,
+      "name": "Total Hours",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Timesheet",
+        "id": 9106
+      },
+      "numericPriority": 198.5,
+      "isSystem": true,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2275,
+      "name": "Working Days",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 0.5,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2276,
+      "name": "Work",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 1,
+      "isSystem": true,
+      "config": {
+        "units": "h",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2277,
+      "name": "Remaining Work",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 1.5,
+      "isSystem": true,
+      "config": {
+        "units": "h",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2292,
+      "name": "Subtasks Planned Start",
+      "fieldType": "Date",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 9,
+      "isSystem": true,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2293,
+      "name": "Subtasks Planned End",
+      "fieldType": "Date",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 9.5,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2294,
+      "name": "Dates Alignment",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 10,
+      "isSystem": true,
+      "value": "Dates Aligned\r\nPlanned Start Mismatch\r\nPlanned End Mismatch\r\nBoth Dates Mismatch",
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2297,
+      "name": "Customer Value",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 11.5,
+      "isSystem": false,
+      "value": "Major\r\nModerate\r\nLimited\r\nNone",
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2298,
+      "name": "Complexity",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 12,
+      "isSystem": false,
+      "value": "1 - Extremely Complex\r\n3 - Moderately Complex\r\n5 - Low Complexity",
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2299,
+      "name": "Required Resources",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 12.5,
+      "isSystem": false,
+      "value": "X-Large (\u003E15)\r\nLarge (10-15)\r\nMedium (5-10)\r\nSmall (1-5)\r\nX-Small (\u003C1)",
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2300,
+      "name": "Strategic Impact",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 13,
+      "isSystem": false,
+      "value": "X-Large ($1M+)\r\nLarge ($250k-$1M)\r\nMedium ($100k-$250k)\r\nSmall ($25k-$100k)\r\nX-Small (\u003C$25k)",
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2301,
+      "name": "Score",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 13.5,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2302,
+      "name": "Estimated Effort",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 14,
+      "isSystem": false,
+      "value": "X-Large (1 year+)\r\nLarge (9-12 months)\r\nMedium (6-9 months)\r\nSmall (3-6 months)\r\nX-Small (\u003C3 months)",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2548,
+      "name": "PPM Project Number",
+      "fieldType": "Text",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 30,
+      "numericPriority": 137,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2550,
+      "name": "Closure Date",
+      "fieldType": "Date",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 138,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2551,
+      "name": "Investment Class",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 138.5,
+      "isSystem": false,
+      "value": "Run\r\nChange",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2552,
+      "name": "Products Supported",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 139,
+      "isSystem": false,
+      "value": "New\r\nExisting\r\nNew and Existing",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2553,
+      "name": "Investment Timeline",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 139.5,
+      "isSystem": false,
+      "value": "Carryover\r\nCarryover/Multi-Year\r\nMulti-Year\r\nRelease\r\nNew",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2554,
+      "name": "Discretionary",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 140,
+      "isSystem": false,
+      "value": "Yes\r\nNo",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2555,
+      "name": "Investment Type",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 140.5,
+      "isSystem": false,
+      "value": "Competitive Positioning\r\nExisting System Maintenance\r\nIncrease Efficiency & Reduce Cost\r\nIncrease Revenue\r\nInfrastructure Security & Support\r\nIntegrated FA & Client Experience\r\nLegal and Regulatory\r\nLegal, Risk and Compliance\r\nRegulatory\r\nTechnical Infrastructure Upgrade\r\nVolume Driven Growth",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2556,
+      "name": "FA Facing",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 10,
+      "numericPriority": 141,
+      "isSystem": false,
+      "value": "Yes\r\nNo",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2557,
+      "name": "External Audit Impact",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 141.5,
+      "isSystem": false,
+      "value": "Compliance\r\nRegulatory\r\nRisk\r\nSupervision\r\nNot Impacted",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2558,
+      "name": "Business Owner Priority",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 142,
+      "isSystem": false,
+      "value": "None\r\n1. Critical\r\n2. High\r\n3. Moderate\r\n4. Low",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2560,
+      "name": "Finance UID",
+      "fieldType": "Text",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 20,
+      "numericPriority": 143,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2561,
+      "name": "Using Enterprise Data",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 143.5,
+      "isSystem": false,
+      "value": "None\r\nYes\r\nNo",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2562,
+      "name": "Managed Cloud Outside RJ",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 144,
+      "isSystem": false,
+      "value": "None\r\nNot Applicable\r\nNew\r\nExisting\r\nNew and Existing\r\nUndetermined",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2563,
+      "name": "RJ Managed and Deployed",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 144.5,
+      "isSystem": false,
+      "value": "None\r\nYes\r\nNo",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2565,
+      "name": "Methodology",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 145.5,
+      "isSystem": false,
+      "value": "Hybrid\r\nWaterfall\r\nInfrastructure\r\nAgile (Features & Releases)",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2566,
+      "name": "RJ Top Program",
+      "fieldType": "CheckBox",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 146,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2567,
+      "name": "Firm Initiative",
+      "fieldType": "CheckBox",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 146.5,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2569,
+      "name": "Confidence Level",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 147.5,
+      "isSystem": false,
+      "value": "High\r\nMedium\r\nLow",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2570,
+      "name": "Capex or Opex Project",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 148,
+      "isSystem": false,
+      "value": "Capitalized\r\nExpensed",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2593,
+      "name": "Primary Point of Contact",
+      "fieldType": "Text",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 159.5,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2597,
+      "name": "Total Benefit",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 161.5,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2598,
+      "name": "Total Project Cost",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 162,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2599,
+      "name": "ROI",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 162.5,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2600,
+      "name": "Benefit Category",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 163,
+      "isSystem": false,
+      "value": "None\r\nCost Savings (Run-Rate or One-Time)\r\nCost Avoidance/Deferral\r\nProductivity/Capacity Creation\r\nDirect Revenue Growth (Attributable)\r\nRevenue Enablement/Acceleration (Influence-Based)\r\nWorking Capital/Balance Sheet Optimization\r\nRisk Reduction/Loss Avoidance\r\nRegulatory Requirement\r\nStrategic/Intangible Value",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2601,
+      "name": "Tollgate Governance",
+      "fieldType": "CheckBox",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 163.5,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2617,
+      "name": "Business Sponsor",
+      "fieldType": "Text",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 171,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2620,
+      "name": "Total Approved Budget",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 172.5,
+      "isSystem": true,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2622,
+      "name": "Total Proposed Budget",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 173,
+      "isSystem": true,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2626,
+      "name": "Primary PM",
+      "fieldType": "Text",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 174.5,
+      "isSystem": true,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2630,
+      "name": "INT Demand",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 176,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2631,
+      "name": "INT SQM",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 176.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2632,
+      "name": "EXT Demand",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 177,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2633,
+      "name": "EXT SQM",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 177.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2659,
+      "name": "SDLC Auditable",
+      "fieldType": "CheckBox",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "numericPriority": 190.5,
+      "isSystem": true,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2660,
+      "name": "Clean Description",
+      "fieldType": "Text",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "TraditionalProject",
+        "id": 9188
+      },
+      "maxTextLength": 15000,
+      "numericPriority": 191,
+      "isSystem": true,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2500,
+      "name": "Daily Hours",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "User",
+        "id": 6
+      },
+      "numericPriority": 113,
+      "isSystem": true,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2576,
+      "name": "Department Name",
+      "fieldType": "Text",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "User",
+        "id": 6
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 151,
+      "isSystem": true,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2577,
+      "name": "Employee ID",
+      "fieldType": "Text",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "User",
+        "id": 6
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 151.5,
+      "isSystem": true,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2579,
+      "name": "Manager Name",
+      "fieldType": "Text",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "User",
+        "id": 6
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 152.5,
+      "isSystem": true,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2583,
+      "name": "Resource Type",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "User",
+        "id": 6
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 154.5,
+      "isSystem": true,
+      "value": "External\r\nExternal Sqm\r\nInternal\r\nInternal Sqm",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2611,
+      "name": "PPM Job Profile",
+      "fieldType": "Text",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "User",
+        "id": 6
+      },
+      "maxTextLength": 120,
+      "numericPriority": 168,
+      "isSystem": true,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2665,
+      "name": "Timetracking",
+      "fieldType": "CheckBox",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "User",
+        "id": 6
+      },
+      "numericPriority": 193.5,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2666,
+      "name": "Resource Category",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "User",
+        "id": 6
+      },
+      "maxTextLength": 60,
+      "numericPriority": 194,
+      "isSystem": false,
+      "value": "Internal\r\nInternal SQM\r\nExternal\r\nExternal SQM",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2668,
+      "name": "Vendor Name",
+      "fieldType": "Text",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "User",
+        "id": 6
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 195,
+      "isSystem": true,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2603,
+      "name": "Importance",
+      "fieldType": "DropDown",
+      "process": {
+        "name": "SAFe",
+        "id": 1,
+        "terms": [
+          {
+            "wordKey": "Iteration",
+            "value": "Iteration"
+          },
+          {
+            "wordKey": "Iterations",
+            "value": "Iterations"
+          },
+          {
+            "wordKey": "Iteration Big Icon Text",
+            "value": "Iteration"
+          },
+          {
+            "wordKey": "Iteration Small Icon Text",
+            "value": "I"
+          },
+          {
+            "wordKey": "Project",
+            "value": "Portfolio"
+          },
+          {
+            "wordKey": "Projects",
+            "value": "Portfolios"
+          },
+          {
+            "wordKey": "Project Big Icon Text",
+            "value": "Portfolio"
+          },
+          {
+            "wordKey": "Impediment",
+            "value": "Impediment"
+          },
+          {
+            "wordKey": "Impediments",
+            "value": "Impediments"
+          },
+          {
+            "wordKey": "Impediment Big Icon Text",
+            "value": "Impediment"
+          },
+          {
+            "wordKey": "Impediment Small Icon Text",
+            "value": "I"
+          },
+          {
+            "wordKey": "Project Small Icon Text",
+            "value": "P"
+          },
+          {
+            "wordKey": "Release",
+            "value": "Planning Interval"
+          },
+          {
+            "wordKey": "Releases",
+            "value": "Planning Intervals"
+          },
+          {
+            "wordKey": "Release Big Icon Text",
+            "value": "Planning Interval"
+          },
+          {
+            "wordKey": "Release Small Icon Text",
+            "value": "PI"
+          },
+          {
+            "wordKey": "Epic",
+            "value": "Capability"
+          },
+          {
+            "wordKey": "Epics",
+            "value": "Capabilities"
+          },
+          {
+            "wordKey": "Epic Big Icon Text",
+            "value": "Capability"
+          },
+          {
+            "wordKey": "Epic Small Icon Text",
+            "value": "C"
+          },
+          {
+            "wordKey": "Request",
+            "value": "Idea"
+          },
+          {
+            "wordKey": "Requests",
+            "value": "Ideas"
+          },
+          {
+            "wordKey": "Request Big Icon Text",
+            "value": "Idea"
+          },
+          {
+            "wordKey": "Request Small Icon Text",
+            "value": "I"
+          },
+          {
+            "wordKey": "Feature",
+            "value": "Feature"
+          },
+          {
+            "wordKey": "Features",
+            "value": "Features"
+          },
+          {
+            "wordKey": "Feature Big Icon Text",
+            "value": "Feature"
+          },
+          {
+            "wordKey": "Feature Small Icon Text",
+            "value": "F"
+          },
+          {
+            "wordKey": "Build",
+            "value": "Build"
+          },
+          {
+            "wordKey": "Builds",
+            "value": "Builds"
+          },
+          {
+            "wordKey": "Build Big Icon Text",
+            "value": "Build"
+          },
+          {
+            "wordKey": "Build Small Icon Text",
+            "value": "B"
+          },
+          {
+            "wordKey": "Portfolio Epic",
+            "value": "Portfolio Epic"
+          },
+          {
+            "wordKey": "Portfolio Epics",
+            "value": "Portfolio Epics"
+          },
+          {
+            "wordKey": "Portfolio Epic Big Icon Text",
+            "value": "Portfolio Epic"
+          },
+          {
+            "wordKey": "Portfolio Epic Small Icon Text",
+            "value": "PE"
+          }
+        ]
+      },
+      "required": true,
+      "entityType": {
+        "name": "UserStory",
+        "id": 4
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 164,
+      "isSystem": false,
+      "value": "Urgent\r\nHigh\r\nMedium\r\nLow\r\nDefer",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2608,
+      "name": "Phase",
+      "fieldType": "DropDown",
+      "process": {
+        "name": "SAFe",
+        "id": 1,
+        "terms": [
+          {
+            "wordKey": "Iteration",
+            "value": "Iteration"
+          },
+          {
+            "wordKey": "Iterations",
+            "value": "Iterations"
+          },
+          {
+            "wordKey": "Iteration Big Icon Text",
+            "value": "Iteration"
+          },
+          {
+            "wordKey": "Iteration Small Icon Text",
+            "value": "I"
+          },
+          {
+            "wordKey": "Project",
+            "value": "Portfolio"
+          },
+          {
+            "wordKey": "Projects",
+            "value": "Portfolios"
+          },
+          {
+            "wordKey": "Project Big Icon Text",
+            "value": "Portfolio"
+          },
+          {
+            "wordKey": "Impediment",
+            "value": "Impediment"
+          },
+          {
+            "wordKey": "Impediments",
+            "value": "Impediments"
+          },
+          {
+            "wordKey": "Impediment Big Icon Text",
+            "value": "Impediment"
+          },
+          {
+            "wordKey": "Impediment Small Icon Text",
+            "value": "I"
+          },
+          {
+            "wordKey": "Project Small Icon Text",
+            "value": "P"
+          },
+          {
+            "wordKey": "Release",
+            "value": "Planning Interval"
+          },
+          {
+            "wordKey": "Releases",
+            "value": "Planning Intervals"
+          },
+          {
+            "wordKey": "Release Big Icon Text",
+            "value": "Planning Interval"
+          },
+          {
+            "wordKey": "Release Small Icon Text",
+            "value": "PI"
+          },
+          {
+            "wordKey": "Epic",
+            "value": "Capability"
+          },
+          {
+            "wordKey": "Epics",
+            "value": "Capabilities"
+          },
+          {
+            "wordKey": "Epic Big Icon Text",
+            "value": "Capability"
+          },
+          {
+            "wordKey": "Epic Small Icon Text",
+            "value": "C"
+          },
+          {
+            "wordKey": "Request",
+            "value": "Idea"
+          },
+          {
+            "wordKey": "Requests",
+            "value": "Ideas"
+          },
+          {
+            "wordKey": "Request Big Icon Text",
+            "value": "Idea"
+          },
+          {
+            "wordKey": "Request Small Icon Text",
+            "value": "I"
+          },
+          {
+            "wordKey": "Feature",
+            "value": "Feature"
+          },
+          {
+            "wordKey": "Features",
+            "value": "Features"
+          },
+          {
+            "wordKey": "Feature Big Icon Text",
+            "value": "Feature"
+          },
+          {
+            "wordKey": "Feature Small Icon Text",
+            "value": "F"
+          },
+          {
+            "wordKey": "Build",
+            "value": "Build"
+          },
+          {
+            "wordKey": "Builds",
+            "value": "Builds"
+          },
+          {
+            "wordKey": "Build Big Icon Text",
+            "value": "Build"
+          },
+          {
+            "wordKey": "Build Small Icon Text",
+            "value": "B"
+          },
+          {
+            "wordKey": "Portfolio Epic",
+            "value": "Portfolio Epic"
+          },
+          {
+            "wordKey": "Portfolio Epics",
+            "value": "Portfolio Epics"
+          },
+          {
+            "wordKey": "Portfolio Epic Big Icon Text",
+            "value": "Portfolio Epic"
+          },
+          {
+            "wordKey": "Portfolio Epic Small Icon Text",
+            "value": "PE"
+          }
+        ]
+      },
+      "required": false,
+      "entityType": {
+        "name": "UserStory",
+        "id": 4
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 166.5,
+      "isSystem": false,
+      "value": "Phase 1\r\nPhase 1.5\r\nPhase 2\r\nPhase X\r\nTimetracking",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2619,
+      "name": "SWAG",
+      "fieldType": "Number",
+      "process": {
+        "name": "SAFe",
+        "id": 1,
+        "terms": [
+          {
+            "wordKey": "Iteration",
+            "value": "Iteration"
+          },
+          {
+            "wordKey": "Iterations",
+            "value": "Iterations"
+          },
+          {
+            "wordKey": "Iteration Big Icon Text",
+            "value": "Iteration"
+          },
+          {
+            "wordKey": "Iteration Small Icon Text",
+            "value": "I"
+          },
+          {
+            "wordKey": "Project",
+            "value": "Portfolio"
+          },
+          {
+            "wordKey": "Projects",
+            "value": "Portfolios"
+          },
+          {
+            "wordKey": "Project Big Icon Text",
+            "value": "Portfolio"
+          },
+          {
+            "wordKey": "Impediment",
+            "value": "Impediment"
+          },
+          {
+            "wordKey": "Impediments",
+            "value": "Impediments"
+          },
+          {
+            "wordKey": "Impediment Big Icon Text",
+            "value": "Impediment"
+          },
+          {
+            "wordKey": "Impediment Small Icon Text",
+            "value": "I"
+          },
+          {
+            "wordKey": "Project Small Icon Text",
+            "value": "P"
+          },
+          {
+            "wordKey": "Release",
+            "value": "Planning Interval"
+          },
+          {
+            "wordKey": "Releases",
+            "value": "Planning Intervals"
+          },
+          {
+            "wordKey": "Release Big Icon Text",
+            "value": "Planning Interval"
+          },
+          {
+            "wordKey": "Release Small Icon Text",
+            "value": "PI"
+          },
+          {
+            "wordKey": "Epic",
+            "value": "Capability"
+          },
+          {
+            "wordKey": "Epics",
+            "value": "Capabilities"
+          },
+          {
+            "wordKey": "Epic Big Icon Text",
+            "value": "Capability"
+          },
+          {
+            "wordKey": "Epic Small Icon Text",
+            "value": "C"
+          },
+          {
+            "wordKey": "Request",
+            "value": "Idea"
+          },
+          {
+            "wordKey": "Requests",
+            "value": "Ideas"
+          },
+          {
+            "wordKey": "Request Big Icon Text",
+            "value": "Idea"
+          },
+          {
+            "wordKey": "Request Small Icon Text",
+            "value": "I"
+          },
+          {
+            "wordKey": "Feature",
+            "value": "Feature"
+          },
+          {
+            "wordKey": "Features",
+            "value": "Features"
+          },
+          {
+            "wordKey": "Feature Big Icon Text",
+            "value": "Feature"
+          },
+          {
+            "wordKey": "Feature Small Icon Text",
+            "value": "F"
+          },
+          {
+            "wordKey": "Build",
+            "value": "Build"
+          },
+          {
+            "wordKey": "Builds",
+            "value": "Builds"
+          },
+          {
+            "wordKey": "Build Big Icon Text",
+            "value": "Build"
+          },
+          {
+            "wordKey": "Build Small Icon Text",
+            "value": "B"
+          },
+          {
+            "wordKey": "Portfolio Epic",
+            "value": "Portfolio Epic"
+          },
+          {
+            "wordKey": "Portfolio Epics",
+            "value": "Portfolio Epics"
+          },
+          {
+            "wordKey": "Portfolio Epic Big Icon Text",
+            "value": "Portfolio Epic"
+          },
+          {
+            "wordKey": "Portfolio Epic Small Icon Text",
+            "value": "PE"
+          }
+        ]
+      },
+      "required": false,
+      "entityType": {
+        "name": "UserStory",
+        "id": 4
+      },
+      "numericPriority": 172,
+      "isSystem": false,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2502,
+      "name": "Partial Leave",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": true,
+      "entityType": {
+        "name": "Vacation",
+        "id": 9085
+      },
+      "numericPriority": 114,
+      "isSystem": false,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2505,
+      "name": "Reserved Capacity",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Vacation",
+        "id": 9085
+      },
+      "numericPriority": 115.5,
+      "isSystem": true,
+      "config": {
+        "units": "%",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2511,
+      "name": "Requested Hours",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Vacation",
+        "id": 9085
+      },
+      "numericPriority": 118.5,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2513,
+      "name": "Total Hours",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Vacation",
+        "id": 9085
+      },
+      "numericPriority": 119.5,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2518,
+      "name": "Working Days",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Vacation",
+        "id": 9085
+      },
+      "numericPriority": 122,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2520,
+      "name": "Reserved Hours",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "Vacation",
+        "id": 9085
+      },
+      "numericPriority": 123,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2310,
+      "name": "Is Current",
+      "fieldType": "CheckBox",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "WeekPeriod",
+        "id": 9105
+      },
+      "numericPriority": 18,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2472,
+      "name": "Overloaded",
+      "fieldType": "CheckBox",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "WorkAllocation",
+        "id": 9053
+      },
+      "numericPriority": 99,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2474,
+      "name": "Total Hours",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "WorkAllocation",
+        "id": 9053
+      },
+      "numericPriority": 100,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2475,
+      "name": "Reserved Capacity",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "WorkAllocation",
+        "id": 9053
+      },
+      "numericPriority": 100.5,
+      "isSystem": true,
+      "config": {
+        "units": "%",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2478,
+      "name": "Reserved Hours",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "WorkAllocation",
+        "id": 9053
+      },
+      "numericPriority": 102,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2499,
+      "name": "Percentage",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": true,
+      "entityType": {
+        "name": "WorkAllocation",
+        "id": 9053
+      },
+      "numericPriority": 112.5,
+      "isSystem": false,
+      "config": {
+        "units": "%",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2523,
+      "name": "Working Days",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "WorkAllocation",
+        "id": 9053
+      },
+      "numericPriority": 124.5,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2524,
+      "name": "Status",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": true,
+      "entityType": {
+        "name": "WorkAllocation",
+        "id": 9053
+      },
+      "numericPriority": 125,
+      "isSystem": false,
+      "value": "Requested\r\nApproved\r\nRejected",
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2526,
+      "name": "Allocation Type",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "WorkAllocation",
+        "id": 9053
+      },
+      "maxTextLength": 4000,
+      "numericPriority": 126,
+      "isSystem": true,
+      "value": "User\r\nJob Profile",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2530,
+      "name": "Total Allocated Cost",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "WorkAllocation",
+        "id": 9053
+      },
+      "numericPriority": 128,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2534,
+      "name": "OpEx (Percentage)",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "WorkAllocation",
+        "id": 9053
+      },
+      "numericPriority": 130,
+      "isSystem": false,
+      "config": {
+        "units": "%",
+        "calculationModel": "100-[CapEx (Percentage)]"
+      }
+    },
+    {
+      "id": 2535,
+      "name": "Grow (Percentage)",
+      "fieldType": "Number",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "WorkAllocation",
+        "id": 9053
+      },
+      "numericPriority": 130.5,
+      "isSystem": false,
+      "config": {
+        "units": "%",
+        "calculationModel": "100-[Run (Percentage)]"
+      }
+    },
+    {
+      "id": 2536,
+      "name": "OpEx Proposed",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "WorkAllocation",
+        "id": 9053
+      },
+      "numericPriority": 131,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2537,
+      "name": "Grow Proposed",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "WorkAllocation",
+        "id": 9053
+      },
+      "numericPriority": 131.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2538,
+      "name": "Run (Percentage)",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": true,
+      "entityType": {
+        "name": "WorkAllocation",
+        "id": 9053
+      },
+      "numericPriority": 132,
+      "isSystem": false,
+      "config": {
+        "units": "%",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2540,
+      "name": "Run Proposed",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "WorkAllocation",
+        "id": 9053
+      },
+      "numericPriority": 133,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2541,
+      "name": "CapEx (Percentage)",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": true,
+      "entityType": {
+        "name": "WorkAllocation",
+        "id": 9053
+      },
+      "numericPriority": 133.5,
+      "isSystem": false,
+      "config": {
+        "units": "%",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2543,
+      "name": "CapEx Proposed",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "WorkAllocation",
+        "id": 9053
+      },
+      "numericPriority": 134.5,
+      "isSystem": true,
+      "config": {
+        "units": "$",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2613,
+      "name": "Hourly Rate",
+      "fieldType": "Money",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "WorkAllocation",
+        "id": 9053
+      },
+      "numericPriority": 169,
+      "isSystem": true,
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2624,
+      "name": "Allocation Status",
+      "fieldType": "DropDown",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "WorkAllocation",
+        "id": 9053
+      },
+      "maxTextLength": 40,
+      "numericPriority": 174,
+      "isSystem": true,
+      "value": "Not Started\r\nIn Progress\r\nComplete",
+      "config": {
+        "units": "",
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2312,
+      "name": "Is Current",
+      "fieldType": "CheckBox",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "YearPeriod",
+        "id": 9088
+      },
+      "numericPriority": 19,
+      "isSystem": true,
+      "config": {
+        "calculationModel": ""
+      }
+    },
+    {
+      "id": 2365,
+      "name": "Generate Budgets",
+      "fieldType": "CheckBox",
+      "process": {
+
+      },
+      "required": false,
+      "entityType": {
+        "name": "YearPeriod",
+        "id": 9088
+      },
+      "numericPriority": 45.5,
+      "isSystem": false,
+      "config": {
+        "calculationModel": ""
+      }
+    }
+  ]
+}
