@@ -1,7 +1,11 @@
 import 'dart:convert';
+import 'dart:typed_data';
 
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
+import 'package:pdf/pdf.dart';
+import 'package:pdf/widgets.dart' as pw;
+import 'package:printing/printing.dart';
 
 void main() {
   runApp(const MyApp());
@@ -184,25 +188,18 @@ class _CustomFieldComparePageState extends State<CustomFieldComparePage> {
         left.required != right.required;
   }
 
-  Widget _buildComparisonSummary() {
+  List<ComparisonSection> _buildComparisonSections() {
     final leftIndex = _buildFieldIndex(_sandboxFields);
     final rightIndex = _buildFieldIndex(_productionFields);
-
-    if (_sandboxFields.isEmpty || _productionFields.isEmpty) {
-      return const SizedBox.shrink();
-    }
-
     final allEntities = <String>{
       ...leftIndex.keys,
       ...rightIndex.keys,
     }.toList()..sort();
-
-    final sections = <Widget>[];
+    final sections = <ComparisonSection>[];
 
     for (final entityName in allEntities) {
       final leftFields = leftIndex[entityName] ?? const <String, CustomField>{};
       final rightFields = rightIndex[entityName] ?? const <String, CustomField>{};
-
       final onlyLeft = leftFields.keys
           .where((fieldName) => !rightFields.containsKey(fieldName))
           .toList()
@@ -217,21 +214,141 @@ class _CustomFieldComparePageState extends State<CustomFieldComparePage> {
               _fieldsDiffer(leftFields[fieldName]!, rightFields[fieldName]!))
           .toList()
         ..sort();
-
-      if (onlyLeft.isEmpty && onlyRight.isEmpty && changed.isEmpty) {
-        continue;
-      }
-
-      final rows = <Widget>[];
+      final groups = <ComparisonGroup>[];
 
       if (onlyLeft.isNotEmpty) {
-        rows.add(_buildDifferenceSection('Only in left', onlyLeft, leftFields));
+        groups.add(ComparisonGroup('Only in Sandbox', onlyLeft, leftFields));
       }
       if (onlyRight.isNotEmpty) {
-        rows.add(_buildDifferenceSection('Only in right', onlyRight, rightFields));
+        groups.add(ComparisonGroup('Only in Production', onlyRight, rightFields));
       }
       if (changed.isNotEmpty) {
-        rows.add(_buildDifferenceSection('Different', changed, leftFields, rightFields));
+        groups.add(ComparisonGroup('Different', changed, leftFields, rightFields));
+      }
+
+      if (groups.isNotEmpty) {
+        sections.add(ComparisonSection(entityName, groups));
+      }
+    }
+
+    return sections;
+  }
+
+  String _formatDifference(ComparisonGroup group, String fieldName) {
+    final leftField = group.leftFields[fieldName];
+    final rightField = group.rightFields?[fieldName];
+
+    if (leftField != null && rightField != null) {
+      return '$fieldName - Sandbox: ${_fieldDetails(leftField)} | Production: ${_fieldDetails(rightField)}';
+    }
+
+    final field = leftField ?? rightField!;
+    final side = leftField != null ? 'Sandbox' : 'Production';
+    return '$fieldName - $side: ${_fieldDetails(field)}';
+  }
+
+  String _fieldDetails(CustomField field) {
+    final requiredLabel = field.required ? 'required' : 'not required';
+    final systemLabel = field.isSystem ? 'system' : 'non system';
+    return '${field.fieldType}/$requiredLabel/$systemLabel';
+  }
+
+  Future<Uint8List> _buildComparisonPdf(PdfPageFormat format) async {
+    final document = pw.Document();
+    final sections = _buildComparisonSections();
+    final regularFont = await PdfGoogleFonts.notoSansRegular();
+    final boldFont = await PdfGoogleFonts.notoSansBold();
+
+    document.addPage(
+      pw.MultiPage(
+        pageFormat: format,
+        theme: pw.ThemeData.withFont(base: regularFont, bold: boldFont),
+        header: (context) => pw.Container(
+          margin: const pw.EdgeInsets.only(bottom: 16),
+          child: pw.Text(
+            'Custom Field Comparison',
+            style: pw.Theme.of(context).defaultTextStyle.copyWith(
+                  fontSize: 18,
+                  fontWeight: pw.FontWeight.bold,
+                ),
+          ),
+        ),
+        build: (context) => [
+          if (sections.isEmpty)
+            pw.Text('No differences found between the loaded JSON files.')
+          else
+            ...sections.map(
+              (section) => pw.Container(
+                margin: const pw.EdgeInsets.only(bottom: 12),
+                padding: const pw.EdgeInsets.all(10),
+                decoration: pw.BoxDecoration(
+                  border: pw.Border.all(color: PdfColors.grey400),
+                  borderRadius: pw.BorderRadius.circular(6),
+                ),
+                child: pw.Column(
+                  crossAxisAlignment: pw.CrossAxisAlignment.start,
+                  children: [
+                    pw.Text(
+                      section.entityName,
+                      style: pw.TextStyle(fontWeight: pw.FontWeight.bold, fontSize: 13),
+                    ),
+                    pw.SizedBox(height: 6),
+                    ...section.groups.expand(
+                      (group) => [
+                        pw.Text(
+                          group.title,
+                          style: pw.TextStyle(
+                            fontWeight: pw.FontWeight.bold,
+                            color: group.title == 'Different'
+                                ? PdfColors.orange800
+                                : PdfColors.grey800,
+                          ),
+                        ),
+                        ...group.fieldNames.map(
+                          (fieldName) => pw.Padding(
+                            padding: const pw.EdgeInsets.only(top: 3),
+                            child: pw.Text(_formatDifference(group, fieldName)),
+                          ),
+                        ),
+                        pw.SizedBox(height: 5),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ),
+        ],
+      ),
+    );
+
+    return document.save();
+  }
+
+  void _openPdfPreview() {
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => ComparisonPdfPreview(onLayout: _buildComparisonPdf),
+      ),
+    );
+  }
+
+  Widget _buildComparisonSummary() {
+    if (_sandboxFields.isEmpty || _productionFields.isEmpty) {
+      return const SizedBox.shrink();
+    }
+
+    final sections = <Widget>[];
+
+    for (final section in _buildComparisonSections()) {
+      final rows = <Widget>[];
+
+      for (final group in section.groups) {
+        rows.add(_buildDifferenceSection(
+          group.title,
+          group.fieldNames,
+          group.leftFields,
+          group.rightFields,
+        ));
       }
 
       sections.add(
@@ -247,7 +364,7 @@ class _CustomFieldComparePageState extends State<CustomFieldComparePage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                entityName,
+                section.entityName,
                 style: Theme.of(context).textTheme.titleMedium?.copyWith(
                   fontWeight: FontWeight.w700,
                 ),
@@ -283,15 +400,15 @@ class _CustomFieldComparePageState extends State<CustomFieldComparePage> {
     Map<String, CustomField>? rightFields,
   ]) {
     final color = switch (title) {
-      'Only in left' => Colors.green.shade50,
-      'Only in right' => Colors.blue.shade50,
+      'Only in Sandbox' => Colors.green.shade50,
+      'Only in Production' => Colors.blue.shade50,
       'Different' => Colors.orange.shade50,
       _ => Colors.grey.shade50,
     };
 
     final borderColor = switch (title) {
-      'Only in left' => Colors.green,
-      'Only in right' => Colors.blue,
+      'Only in Sandbox' => Colors.green,
+      'Only in Production' => Colors.blue,
       'Different' => Colors.orange,
       _ => Colors.grey,
     };
@@ -310,9 +427,6 @@ class _CustomFieldComparePageState extends State<CustomFieldComparePage> {
           ),
           const SizedBox(height: 4),
           ...fieldNames.map((fieldName) {
-            final leftField = leftFields[fieldName];
-            final rightField = rightFields?[fieldName];
-
             return Container(
               margin: const EdgeInsets.only(bottom: 4),
               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
@@ -322,10 +436,10 @@ class _CustomFieldComparePageState extends State<CustomFieldComparePage> {
                 border: Border.all(color: borderColor.withValues(alpha: 0.7)),
               ),
               child: Text(
-                fieldName +
-                    (leftField != null && rightField != null
-                        ? ' — left: ${leftField.fieldType}/${leftField.required}/${leftField.isSystem} | right: ${rightField.fieldType}/${rightField.required}/${rightField.isSystem}'
-                        : ' — ${leftField != null ? 'left: ${leftField.fieldType}/${leftField.required}/${leftField.isSystem}' : 'right: ${rightField!.fieldType}/${rightField.required}/${rightField.isSystem}'}'),
+                _formatDifference(
+                  ComparisonGroup(title, fieldNames, leftFields, rightFields),
+                  fieldName,
+                ),
               ),
             );
           }),
@@ -424,7 +538,7 @@ class _CustomFieldComparePageState extends State<CustomFieldComparePage> {
                                   contentPadding: const EdgeInsets.only(left: 16, right: 12),
                                   title: Text(field.name),
                                   subtitle: Text(
-                                    'Type: ${field.fieldType} • System: ${field.isSystem} • Required: ${field.required}',
+                                    'Type: ${field.fieldType} • ${field.isSystem ? 'system' : 'non system'} • ${field.required ? 'required' : 'not required'}',
                                   ),
                                 ),
                               ),
@@ -509,9 +623,20 @@ class _CustomFieldComparePageState extends State<CustomFieldComparePage> {
                     children: [
                       Padding(
                         padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
-                        child: Text(
-                          'Comparison',
-                          style: Theme.of(context).textTheme.titleLarge,
+                        child: Row(
+                          children: [
+                            Expanded(
+                              child: Text(
+                                'Comparison',
+                                style: Theme.of(context).textTheme.titleLarge,
+                              ),
+                            ),
+                            FilledButton.icon(
+                              onPressed: _openPdfPreview,
+                              icon: const Icon(Icons.picture_as_pdf),
+                              label: const Text('Export PDF'),
+                            ),
+                          ],
                         ),
                       ),
                       SizedBox(
@@ -524,6 +649,45 @@ class _CustomFieldComparePageState extends State<CustomFieldComparePage> {
               ],
             ),
         ],
+      ),
+    );
+  }
+}
+
+class ComparisonSection {
+  final String entityName;
+  final List<ComparisonGroup> groups;
+
+  const ComparisonSection(this.entityName, this.groups);
+}
+
+class ComparisonGroup {
+  final String title;
+  final List<String> fieldNames;
+  final Map<String, CustomField> leftFields;
+  final Map<String, CustomField>? rightFields;
+
+  const ComparisonGroup(
+    this.title,
+    this.fieldNames,
+    this.leftFields, [
+    this.rightFields,
+  ]);
+}
+
+class ComparisonPdfPreview extends StatelessWidget {
+  final Future<Uint8List> Function(PdfPageFormat) onLayout;
+
+  const ComparisonPdfPreview({required this.onLayout, super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('Comparison PDF Preview')),
+      body: PdfPreview(
+        canChangeOrientation: false,
+        canChangePageFormat: false,
+        build: onLayout,
       ),
     );
   }
